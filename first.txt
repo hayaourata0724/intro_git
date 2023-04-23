@@ -3,9 +3,33 @@ Gitの練習をしていいきます．
 ステージングエリア　git add　　　　　控室的な感じ
 
 ローカルリポジトリ　git commit　　　自分のGitのリポジトリ
+                 git commit -m "message"
+		
 
 リモートリポジトリ　git push　　　　オンライン上のGitのリポジトリ
 
 リモートリポジトリからローカルリポジトリに持ってくる　git clone
 
 リモートの特定の部分をローカルに反映　git pull
+
+ブランチの変更　git branch -m "new branch name"
+古いとmasterになってたりするらしい
+
+リモートリポジトリへの紐付け　git remote add origin 
+					↑リモートリポジトリの名前
+
+github繋げ方(git status　でその都度状況確認)
+⓪git repository の作成　アクセストークンの設定　fullなんとか一番上だけチェック　
+①ファイル内でgit init　して　.git を作る
+②git add で作ったファイルたちをステージングエリアに
+③git commit でローカルリポジトリに (git commit -m "message"　でコミット時のメッセージを追加)
+④git branch -m main でブランチの変更
+⑤git hub に出てくるやつコピペ　git branch -m main にする　masterはだめ
+⑥git remote add origin <github　の http>
+git remote add origin https://github.com/hayaourata0724/intro_git.git
+⑦git push -u origin main
+⑧username:githubのやついつも下のやつ
+⑨password:アクセストークンいつも下のやつ
+git push -u origin main
+Username for 'https://github.com': hayaourata0724
+Password for 'https://hayaourata0724@github.com': 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
